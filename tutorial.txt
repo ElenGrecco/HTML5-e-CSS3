@@ -1,0 +1,14 @@
+! = atalho para a estrutura base no vc code
+<> = chamado de tag.
+Obs:  Existem estrutura com fechamento: "<hmtl>".
+      Não fechamento: </html> possui a barra no fechamento como diferente.
+
+
+alt z = quebra de linha "as vezaes ao colar pula um monte de linhas, isso evita que aconteça"
+
+html= é o esquelo do site
+scc= é o corpo do site
+
+Obs: pegar o codigo do emoji através do navegor, site emojopedia, escolher o emoji e apos em ficha 
+tecnica escrito em inglês, selecionar o código após o U+
+&#x ... o codigo; => recria emojis no HTML
