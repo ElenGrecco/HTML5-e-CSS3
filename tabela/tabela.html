@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
     <meta name="keywords" content="">
     <title>Tabela</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="imagem/x-con">
-    
+    <link rel="stylesheet" href="estilo_tabela.css">
+
 </head>
+
 <body>
-    
+
     <table><!--table- tabela-->
         <tr><!--tr cria uma linha-->
-            <td><!--td cria um quadrado-->
+
+            <td colspan="3"><!--td cria um quadrado-->
                 <h1>A história do Linux</h1>
             </td>
             <td>
@@ -21,51 +25,70 @@
 
             </td>
         </tr>
-        <tr>
-            <td>Ubunti</td>
-            <td>openSUSE</td>
-            <td>Red Hat</td>
-            <td>Debian</td>
+        <tr id="menu">
+            <td><a href="https://ubuntu.com/download">Ubuntu</a></td>
+            <td><a href="https://get.opensuse.org/pt_BR/">openSUSE</a></td>
+            <td><a href="https://access.redhat.com/downloads">Red Hat</a></td>
+            <td><a href="https://www.debian.org/distrib/">Debian</a></td>
         </tr>
 
         <tr>
 
-            <td> <br> </td><!--Linha vazia, quando colocamos o <br> dentro do <td>-->
+            <td colspan="4"> <br> </td><!--Linha vazia, quando colocamos o <br> dentro do <td>-->
         </tr>
         <tr>
-            <td><img src="img/ubuntu.png" alt=""></td>
-            <td><h2>Ubuntu</h2></td>
-            
-        </tr> 
-        
-        <tr>
-            <td><h2>openSUSE</h2></td>
-        </tr>
-        
-        <tr>
-            <td><h2>Red Hat</h2></td>
+            <td colspan="3" rowspan="4"><img src="img/ubuntu.png" alt=""></td>
+            <td> 
+                <h2>Ubuntu</h2>
+            </td>
+
         </tr>
 
         <tr>
-            <td><h2>Debian</h2></td>
+            <td>
+                <h2>openSUSE</h2>
+            </td>
         </tr>
 
-        <td> <br> </td>
         <tr>
-            <td><h2>Rodapé</h2></td>
-
+            <td>
+                <h2>Red Hat</h2>
+            </td>
         </tr>
-        
+
         <tr>
-            <td><h2>Somente para fins educacionais.</h2></td>
+            <td>
+                <h2>Debian</h2>
+            </td>
         </tr>
 
-        
+        <tr>
+             <td colspan="4"> 
+            <br> 
+        </td>
+        </tr>
+       
+
+        <tr>
+            <td class="rodape" colspan="4">
+                <h2>Rodapé</h2>
+            </td>
+
+        </tr>
+
+        <tr class="rodape">
+            <td colspan="4">
+                <h2>Somente para fins educacionais.</h2>
+            </td>
+        </tr>
 
 
-        
+
+
+
 
     </table>
-    
+
 </body>
+
 </html>
