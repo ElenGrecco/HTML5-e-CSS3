@@ -9,6 +9,8 @@
 
     <title>Games</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-con">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -169,12 +171,46 @@
                     </p>
 
                     <p>
+                        <label for="ccor">Cor</label>
+                        <input type="color" name="cor" id="ccor" value="#0000">
+
+                    <p>
+                        <label for="cqtde">Qtde:</label>
+                        <input type="number" name="qtde" id="cqtde" min="0" max="5" value="0">
+                    </p>
+
+                    <p>
+                        <label for="ctot">Preço total: R$</label>
+                        <input type="text" name="tot" id="ctot"
+                        placeholder="Total a pagar" readonly>
+                    </p>
                         
+
                     </p>
 
                 </fieldset>
+
+                
             </fieldset>
+            <button type="submit" name="enviar" class="btn">Enviar </button>
+                <button type="reset" name="limpar" class="btn">Limpar</button>
         </form>
+
+        <footer id="rodpe">
+            <p>
+                Somente para fins educativos.
+            </p>
+
+            <p>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagran"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank"><img src="img/x_twitter.png" alt="X-Twitter"></a>
+                <a href="https://github.com/" target="_blank"><img src="img/github.png" alt="Github"></a>
+                <a href="https://br.linkedin.com/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+
+            </p>
+
+        </footer>
     </div>
 </body>
 
