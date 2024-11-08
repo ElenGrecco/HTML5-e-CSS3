@@ -31,14 +31,14 @@
 
         </header>
         <div class="banner_anime">
-            <img src="img/banner1.jpg" alt="Jogo God of War" title="Kratos" id="animal">
-            <img src="img/banner2.jpg" alt="Jogo God of War" title="Kratos" id="animal">
+            <img src="img/banner1.jpg" alt="Jogo God of War" title="Kratos" id="anime1">
+            <img src="img/banner2.jpg" alt="Jogo God of War" title="Kratos" id="anime2">
         </div>
 
         <h1>Entre em contato conosco</h1>
 
         <form action="mailto:elen@email.com">
-            <fieldset><!--conj de campos-->
+            <fieldset class="usuario"><!--conj de campos-->
                 <legend>Identificação do usuário</legend>
                 <p>
                     <label for="cnome">Nome:</label>
@@ -88,7 +88,7 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="endereco">
                 <legend>Endereço do usuário</legend>
 
                 <p>
@@ -131,7 +131,9 @@
 
                 </p>
 
-                <fieldset id="mensagem">
+                </fieldset>
+
+                <fieldset class="mensagem">
                     <legend>Mensagem do usuário</legend>
                     <p>
                         <label for="curg">Grau de urgência</label>
@@ -150,7 +152,7 @@
 
                 </fieldset>
 
-                <fieldset id="pedido">
+                <fieldset class="pedido">
                     <legend>Quero um console</legend>
                     <p>
                         <input type="checkbox" name="ped" id="cped">
@@ -191,12 +193,12 @@
                 </fieldset>
 
                 
-            </fieldset>
+            
             <button type="submit" name="enviar" class="btn">Enviar </button>
                 <button type="reset" name="limpar" class="btn">Limpar</button>
         </form>
 
-        <footer id="rodpe">
+        <footer id="rodape">
             <p>
                 Somente para fins educativos.
             </p>
