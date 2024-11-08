@@ -1,2 +1,2 @@
-# HTML5-e-SCC3
-Introdução de HTML e SCC3
+# HTML5-e-CSS3
+Introdução de HTML e CSS3
