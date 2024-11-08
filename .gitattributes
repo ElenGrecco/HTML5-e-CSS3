@@ -1,3 +1,4 @@
 formulario/midias/GodOfWar.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
+formulario/midias/GodOfWar.mp3 filter=lfs diff=lfs merge=lfs -text
