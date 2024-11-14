@@ -1,0 +1,72 @@
+@charset "Utf-8";
+
+/*Fontes externas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Váriaveis CSS*/
+:root{
+    --cor1: #e8e8e8;
+    --cor2: #a1a1a1;
+    --cor3: #434343;
+    --cor4: #173261;
+    --cor5: #FFF;
+    --cor6: #000;
+
+
+    --titulo: 'Open Sans', sans-serif;
+    --texto:  'Sour Gummy', sans-serif;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #4646a5;
+}
+/*layout*/
+.container{
+    display: flex;
+}
+
+/*SMARTPHONE PORTRAIT*/
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width:576px) {
+    body{
+        background: #d83a54;
+
+    }
+}
+
+/*TABLET PORTRAIT*/
+@media (min-width:768px) {
+    body{
+        background: #6f44e4;
+
+    }
+}
+
+/*TABLET LANDSCAPE*/
+@media (min-width:992px) {
+    body{
+        background: #61b909;
+
+    }
+}
+
+/*PC*/
+@media (min-width:1200px) {
+    body{
+        background: #eb6309;
+
+    }
+}
+
+
