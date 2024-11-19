@@ -32,16 +32,37 @@ body{
 }
 /*layout*/
 .container{
+    margin: 0 auto;
+
+}
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+.flex{
     display: flex;
+    justify-content: space-between;
 }
 
 /*SMARTPHONE PORTRAIT*/
+/*cabeçalho*/
+header{
+    height: 60px;
+    
+}
 
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width:576px) {
     body{
         background: #d83a54;
 
+    }
+    .container{
+        max-width: 540px;
     }
 }
 
@@ -51,6 +72,9 @@ body{
         background: #6f44e4;
 
     }
+    .container{
+        max-width: 720px;
+    }
 }
 
 /*TABLET LANDSCAPE*/
@@ -59,6 +83,9 @@ body{
         background: #61b909;
 
     }
+    .container{
+        max-width: 960px;
+    }
 }
 
 /*PC*/
@@ -66,6 +93,18 @@ body{
     body{
         background: #eb6309;
 
+    }
+    .container{
+        max-width: 1140px;
+    }
+
+    /*cabeçalho*/
+    header{
+        height: 125px;
+    }
+    .logo img{
+        margin-top: 30px;
+        margin-left: 30px;
     }
 }
 
