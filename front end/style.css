@@ -51,8 +51,41 @@ body{
 /*SMARTPHONE PORTRAIT*/
 /*cabeçalho*/
 header{
-    height: 60px;
-    
+    height: 60px;   
+}
+#check{
+    display: none;
+}
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+
+}
+nav ul{
+    list-style: none;
+    background: var(--cor2);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: var(--cor6) 1px solid;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-family: var(--texto);
+    font-size: 1.3em;
+}
+#check:checked ~ ul{
+    right: 0;
 }
 
 /*SMARTPHONE LANDSCAPE*/
