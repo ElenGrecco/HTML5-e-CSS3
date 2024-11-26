@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Váriaveis CSS*/
-:root {
+:root{
     --cor1: #e8e8e8;
     --cor2: #a1a1a1;
     --cor3: #434343;
@@ -16,28 +16,26 @@
 
 
     --titulo: 'Open Sans', sans-serif;
-    --texto: 'Sour Gummy', sans-serif;
+    --texto:  'Sour Gummy', sans-serif;
 }
 
 /*Reset CSS*/
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     background: #4646a5;
 }
-
-/*layout*/
-.container {
+/*Layout*/
+.container{
     margin: 0 auto;
-
+    /*background: #09abeb;*/
 }
-
-#topo {
+#topo{
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -47,59 +45,58 @@ body {
     color: var(--cor1);
     font-size: 1.5em;
     font-weight: 700;
-    background: var(--cor4);
-    border: 3px solid var(--cor1);
+    background:var(--cor4);
+    border: 1px solid var(--cor1);
     border-radius: 25px;
     padding: 10px 40px;
 }
 
-.flex {
+.flex{
     display: flex;
     justify-content: space-between;
+    /*background: #fd7c03;*/
+
+}
+.flex2{
+    display: flex;
+    align-items: center;
 }
 
 /*SMARTPHONE PORTRAIT*/
-/*cabeçalho*/
-header {
+/*Cabeçalho*/
+header{
     height: 60px;
 }
-
-#check {
+#check{ 
     display: none;
 }
-
-label {
+label{
     font-size: 3em;
     position: fixed;
     top: 5px;
     right: 15px;
-
 }
-
-nav ul {
+nav ul{
     list-style: none;
-    background: var(--cor2);
+    /*background: #8c67f3;*/
     height: 100vh;
     position: fixed;
     top: 60px;
     right: -100%;
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.50s;
 }
-
-nav ul li {
+nav ul li{
     padding: 20px;
-    border-bottom: var(--cor6) 1px solid;
+    border-bottom:var(--cor6) 1px solid;
 }
-
-nav ul li a {
+nav ul li a{
     text-decoration: none;
     color: var(--cor1);
     font-family: var(--texto);
-    font-size: 1.3em;
+    font-style: 1.5em;
 }
-
-#check:checked~ul {
+#check:checked ~ ul{
     right: 0;
 }
 
@@ -109,133 +106,167 @@ main{
     background: url(img/banner_front.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    color: var(--cor6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-family: var(--titulo);
-}
-
-main h1{
+    font-family: var(--titulo)
+}main h1{
     font-size: 3em;
 }
-
 main h2{
     font-size: 1.5em;
     margin: 20px 0px 50px 0px;
 }
 
+/*SOBRE*/
+#sobre{ 
+    background: url(img/background5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+}
+.destaque_sobre{
+    display: none;
+}
+.texto_sobre{
+    color: var(--cor6);
+    padding: 0px 10px;
+    font-family: var(--texto);
+}
+.texto_sobre h2{
+    margin-bottom: 10px;
+    font-family: var(--titulo);
+    font-size: 2em;
+}
+.texto_sobre p{
+    font-size: 1.4em;
+}
+.topico_sobre{
+    margin-top: 20px;
+}
+.topico_sobre img{
+    margin-right: 10px;
+}
+
 
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width:576px) {
-    /**body {
+    /*body{
         background: #d83a54;
-
+        
     }*/
-
-    .container {
+    .container{
         max-width: 540px;
     }
 
-    label {
+    label{ 
         right: 60px;
     }
-/*DESTAQUE*/
-main h1, main h2{
-    text-shadow: var(--cor4) 0.1em 0.1em 0.3em;
-}
+    
+    /*DESTAQUE*/
+    main h1, main h2{
+        text-shadow: var(--cor4) 0.2em 0.2em 0.2em; 
+    
+    } 
 }
 
 /*TABLET PORTRAIT*/
 @media (min-width:768px) {
-    /**body {
+    /*body{
         background: #6f44e4;
 
     }*/
-
-    .container {
+    .container{ 
         max-width: 720px;
     }
-
-    label {
+    label{
         right: 35px;
     }
-
-    /*DESTAQUE*/  
+    /*DESTAQUE*/
     main{
         height: 45vh;
     }
-    
     main h1{
         font-size: 5em;
     }
-
     main h2{
         font-size: 2em;
+    }
+
+    .texto_sobre h2{
+        font-size: 2.8em;
+    }
+    .texto_sobre p{
+        font-size: 1.8em;
     }
 }
 
 /*TABLET LANDSCAPE*/
 @media (min-width:992px) {
-    /**body {
+    /*body{
         background: #61b909;
 
     }*/
-
-    .container {
+    .container{
         max-width: 960px;
     }
-
-    /*DESTAQUE*/  
-
+    /*DESTAQUE*/
     main{
         height: 70vh;
     }
-
-    
 }
 
 /*PC*/
 @media (min-width:1200px) {
-    /**body {
-        background: #eb6309;
+    /*body{
+        background: #09abeb;
 
     }*/
-
-    .container {
+    .container{
         max-width: 1140px;
     }
 
-    /*cabeçalho*/
-    header {
+
+ /*Cabeçalho*/
+    header{
         height: 125px;
     }
-
-    .logo img {
+    .logo img{
         margin-top: 30px;
         margin-left: 30px;
     }
-
-    label {
+    label{
         display: none;
     }
-
-    nav ul {
+    nav ul{
         position: static;
         height: auto;
         background: transparent;
         margin-top: 50px;
     }
-
-    nav ul li {
+    nav ul li{
         float: left;
         border: 0;
     }
     nav ul li a{
         color: var(--cor4);
     }
-    nav ul li a:hover{
-        color: chartreuse;
+    nav ul li a:hover{ 
+        color: red;
     }
+
+    /*SOBRE*/
+    .destaque_sobre{
+        display: inline;
+    }
+    .destaque_sobre img{
+        border-radius: 50%;
+        margin: 50px;
+    }
+    #sobre{
+        background-attachment: fixed; /*Efeito Parallax*/
+    }
+    
 }
+
